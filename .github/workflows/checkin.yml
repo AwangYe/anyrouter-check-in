@@ -1,7 +1,9 @@
 name: AnyRouter 自动签到
 on:
+  repository_dispatch:
+    types: [checkin]
   schedule:
-    - cron: '23 1,9,17 * * *'
+    - cron: '29 1,9,17 * * *'
   workflow_dispatch:
     inputs:
       debug:
